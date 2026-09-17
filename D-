@@ -1,0 +1,29 @@
+using System;
+
+class ProgramD
+{
+    static void Main()
+    {
+        Console.Write("Digite uma data (dd/MM/yyyy): ");
+        DateTime data = DateTime.Parse(Console.ReadLine());
+
+        bool feriado = (data.Day == 1 && data.Month == 1) ||
+                       (data.Day == 21 && data.Month == 4) ||
+                       (data.Day == 1 && data.Month == 5) ||
+                       (data.Day == 7 && data.Month == 9) ||
+                       (data.Day == 12 && data.Month == 10) ||
+                       (data.Day == 2 && data.Month == 11) ||
+                       (data.Day == 15 && data.Month == 11) ||
+                       (data.Day == 20 && data.Month == 11) ||
+                       (data.Day == 25 && data.Month == 12);
+
+        if (feriado)
+        {
+            Console.WriteLine("A data é um feriado nacional.");
+        }
+        else
+        {
+            Console.WriteLine("A data não é um feriado nacional.");
+        }
+    }
+}
