@@ -1,0 +1,21 @@
+using System;
+
+class ProgramC
+{
+    static void Main()
+    {
+        Console.Write("Digite sua data de nascimento (dd/MM/yyyy): ");
+        DateTime nascimento = DateTime.Parse(Console.ReadLine());
+
+        DateTime hoje = DateTime.Today;
+
+        int idade = hoje.Year - nascimento.Year;
+
+        if (nascimento > hoje.AddYears(-idade))
+        {
+            idade--;
+        }
+
+        Console.WriteLine("Sua idade é: " + idade + " anos");
+    }
+}
