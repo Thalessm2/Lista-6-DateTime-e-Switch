@@ -1,0 +1,29 @@
+using System;
+
+class ProgramG
+{
+    static void Main()
+    {
+        Console.Write("Digite uma cor (vermelho, azul ou verde): ");
+        string cor = Console.ReadLine().ToLower();
+
+        switch (cor)
+        {
+            case "vermelho":
+                Console.WriteLine("Você escolheu a cor vermelha.");
+                break;
+
+            case "azul":
+                Console.WriteLine("Você escolheu a cor azul.");
+                break;
+
+            case "verde":
+                Console.WriteLine("Você escolheu a cor verde.");
+                break;
+
+            default:
+                Console.WriteLine("Cor inválida.");
+                break;
+        }
+    }
+}
