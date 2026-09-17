@@ -1,0 +1,17 @@
+using System;
+
+class ProgramB
+{
+    static void Main()
+    {
+        Console.Write("Digite a primeira data (dd/MM/yyyy): ");
+        DateTime data1 = DateTime.Parse(Console.ReadLine());
+
+        Console.Write("Digite a segunda data (dd/MM/yyyy): ");
+        DateTime data2 = DateTime.Parse(Console.ReadLine());
+
+        TimeSpan diferenca = data2 - data1;
+
+        Console.WriteLine("Diferença em dias: " + Math.Abs(diferenca.Days));
+    }
+}
