@@ -1,0 +1,11 @@
+using System;
+
+class ProgramA
+{
+    static void Main()
+    {
+        DateTime agora = DateTime.Now;
+
+        Console.WriteLine("Data e hora atual: " + agora);
+    }
+}
